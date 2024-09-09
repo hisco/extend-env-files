@@ -1,0 +1,24 @@
+{
+  "name": "extend-env-files",
+  "version": "1.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/extend-env-files.js",
+  "keywords": [
+    "env",
+    "dotenv",
+    "extend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisco/extend-env-files.git"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0"
+  }
+}
