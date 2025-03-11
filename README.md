@@ -25,7 +25,7 @@ To use this module, set the `ENV_FILES_CONFIG` environment variable with a JSON 
 ### Example
 
 ```sh
-export ENV_FILES_CONFIG='{"./config/.env": "KEY_A=1\nKEY_B=2", "./config/.env.local": "KEY_C=3"}'
+export ENV_FILES_CONFIG='{"./config/.env": {"KEY_A": "1", "KEY_B": "2"}, "./config/.env.local": {"KEY_C": "3"}}'
 npx extend-env-files
 ```
 
@@ -54,8 +54,13 @@ Example `ENV_FILES_CONFIG` value:
 
 ```json
 {
-  "./config/.env": "KEY_A=1\nKEY_B=2",
-  "./config/.env.local": "KEY_C=3"
+  "./config/.env": {
+    "KEY_A": "1",
+    "KEY_B": "2"
+  },
+  "./config/.env.local": {
+    "KEY_C": "3"
+  }
 }
 ```
 
